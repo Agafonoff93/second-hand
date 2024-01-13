@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Second-Hand</title>
+  <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="header__container container flex">
+    <a href="#" class="header__logo logo">
+      <span>Second Hand</span><span>.shop</span>
+    </a>
+    <div class="header__panel flex user-panel">
+      <div class="user-panel__your-city user-panel__your-city--header">
+        <span class="user-panel__label text-grey-13">Ваш город</span>
+        <span class="user-panel__your-city-choose text-black">Калининград</span>
+      </div>
+      <div id="user-actions-authorized" class="user-panel__user-actions flex hidden">
+        <a href="#" class="user-panel__user-action user-panel__user-action--user">
+          <div class="icon icon-user-2"></div>
+          <span class="text-grey">Личный кабинет</span>
+          <span class="text-black">Петр</span>
+
+        </a>
+        <a href="#" class="user-panel__user-action user-panel__user-action--other-icons  icon icon-message "></a>
+        <a href="#" class="user-panel__user-action user-panel__user-action--other-icons icon icon-like-me "></a>
+      </div>
+      <div id="user-actions-unauthorized" class="user-panel__user-actions ">
+        <a href="#" class="user-panel__user-action user-panel__user-action--user">
+          <div class="icon icon-user-2"></div>
+          <span class="text-grey-13">Личный кабинет</span>
+          <span class="text-black">Войти</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero">
+  <div class="hero__container container flex">
+    <div class="hero__content">
+      <h1 class="hero__title">Все секонд-хенды и комиссионные магазины в <span>Калининграде</span></h1>
+      <p class="hero__text">Представляем вашему вниманию новый, удобный сервис, который поможет вам найти лучшие секонд-хенд магазины в Калининграде! На портале вы сможете выбрать для посещения самые подходящие комиссионные, ориентируясь на отзывы других пользователей, время работы, адрес и календарь скидок.</p>
+
+      <div class="hero__features features">
+        <div class="features__item">
+          <div class="features__icon icon icon-shop"></div>
+          <div class="features__text text-black-sb">Более 126 магазинов во всех районах города</div>
+        </div>
+        <div class="features__item">
+          <div class="features__icon icon icon-chat"></div>
+          <div class="features__text text-black-sb">Частные объявления от пользователей</div>
+        </div>
+        <div class="features__item">
+          <div class="features__icon icon icon-calendar"></div>
+          <div class="features__text text-black-sb">Новости о завозах и акциях в магазинах</div>
+        </div>
+        <div class="features__item">
+          <div class="features__icon icon icon-like-me "></div>
+          <div class="features__text text-black-sb">Подписка на любимые секонд-хенды</div>
+        </div>
+      </div>
+      <div class="hero__buttoms">
+        <button class="hero__button button">Добавить магазин</button>
+        <button class="hero__button button button-light">Разместить объявление</button>
+      </div>
+    </div>
+    <div class="hero__image ibg">
+      <img src="img/main-girl.png" alt="girl">
+    </div>
+  </div>
+</section>
+
+      <section class="shops mt-section">
+  <div class="shops__container container">
+    <h2 class="shops__title shops__title--yellow"><span>Лучшие</span> секонд-хенды</h2>
+    <div class="shops__slider-wrapper wrapper-slider">
+      <div class="swiper shops__cards-slider">
+        <div class="shops__navigation navigation-slider">
+          <div class="navigation-slider__button prev shops__button-slider">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path
+                d="M7.05006 9.90832L11.7667 5.19999C11.8442 5.12188 11.9364 5.05989 12.0379 5.01758C12.1395 4.97527 12.2484 4.95349 12.3584 4.95349C12.4684 4.95349 12.5773 4.97527 12.6789 5.01758C12.7804 5.05989 12.8726 5.12188 12.9501 5.19999C13.1053 5.35613 13.1924 5.56733 13.1924 5.78749C13.1924 6.00764 13.1053 6.21885 12.9501 6.37499L8.82506 10.5417L12.9501 14.6667C13.1053 14.8228 13.1924 15.034 13.1924 15.2542C13.1924 15.4743 13.1053 15.6855 12.9501 15.8417C12.8729 15.9204 12.7808 15.983 12.6793 16.026C12.5777 16.0689 12.4686 16.0912 12.3584 16.0917C12.2481 16.0912 12.1391 16.0689 12.0375 16.026C11.9359 15.983 11.8439 15.9204 11.7667 15.8417L7.05006 11.1333C6.96547 11.0553 6.89796 10.9606 6.85179 10.8552C6.80562 10.7497 6.78178 10.6359 6.78178 10.5208C6.78178 10.4057 6.80562 10.2919 6.85179 10.1865C6.89796 10.0811 6.96547 9.98636 7.05006 9.90832Z"
+                fill="#222222" />
+            </svg>
+          </div>
+          <div class="navigation-slider__button next shops__button-slider">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+              <path
+                d="M12.9499 9.90832L8.23328 5.19999C8.15581 5.12188 8.06364 5.05989 7.96209 5.01758C7.86054 4.97527 7.75162 4.95349 7.64161 4.95349C7.5316 4.95349 7.42268 4.97527 7.32113 5.01758C7.21958 5.05989 7.12741 5.12188 7.04994 5.19999C6.89474 5.35613 6.80762 5.56733 6.80762 5.78749C6.80762 6.00764 6.89474 6.21885 7.04994 6.37499L11.1749 10.5417L7.04994 14.6667C6.89474 14.8228 6.80762 15.034 6.80762 15.2542C6.80762 15.4743 6.89474 15.6855 7.04994 15.8417C7.12712 15.9204 7.21916 15.983 7.32072 16.026C7.42229 16.0689 7.53135 16.0912 7.64161 16.0917C7.75187 16.0912 7.86094 16.0689 7.9625 16.026C8.06406 15.983 8.1561 15.9204 8.23328 15.8417L12.9499 11.1333C13.0345 11.0553 13.102 10.9606 13.1482 10.8552C13.1944 10.7497 13.2182 10.6359 13.2182 10.5208C13.2182 10.4057 13.1944 10.2919 13.1482 10.1865C13.102 10.0811 13.0345 9.98636 12.9499 9.90832Z"
+                fill="#222222" />
+            </svg>
+          </div>
+        </div>
+        <div class="swiper-wrapper shops__swiper-wrapper">
+          <div class="swiper-slide shops__slide">
+            <article class="shops__card card shops__card--border-yellow">
+              <div class="card__image ibg">
+                <img src="img/clothes-foto.png" alt="image-shops">
+              </div>
+              <div class="card__content">
+                <div class="card__info flex">
+                  <div class="card__statistics flex">
+                    <div class="card__rating icon icon-star"><span>4.8</span></div>
+                    <div class="card__reviews icon icon-chat"><span>215</span></div>
+                  </div>
+                  <div class="card__info-actioin flex">
+                    <div class="card__map icon icon-map"></div>
+                    <div class="card__favorites icon icon-like-me"></div>
+                  </div>
+                </div>
+                <h3 class="card__title">Danke-Shop Благотворительный магазин в Калининграде 5*</h3>
+                <div class="card__locale icon icon-location"><span>ул. Дачная, 4, Калининград, Калининградская обл.,
+                    Россия,
+                    236006</span></div>
+                <div class="card__actions">
+                  <a href="tel:+74012903800" class="card__tel icon icon-phone"><span>+7 (401-29) 0-38-00</span></a>
+                  <a href="#" class="card__button button button-small">Подробнее</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide shops__slide">
+            <article class="shops__card card shops__card--border-yellow">
+              <div class="card__image ibg">
+                <img src="img/clothes-foto.png" alt="image-shops">
+              </div>
+              <div class="card__content">
+                <div class="card__info flex">
+                  <div class="card__statistics flex">
+                    <div class="card__rating icon icon-star"><span>4.8</span></div>
+                    <div class="card__reviews icon icon-chat"><span>215</span></div>
+                  </div>
+                  <div class="card__info-actioin flex">
+                    <div class="card__map icon icon-map"></div>
+                    <div class="card__favorites icon icon-like-me"></div>
+                  </div>
+                </div>
+                <h3 class="card__title">Danke-Shop Благотворительный магазин в Калининграде 5*</h3>
+                <div class="card__locale icon icon-location"><span>ул. Дачная, 4, Калининград, Калининградская обл.,
+                    Россия,
+                    236006
+                    ул. Дачная, 4, Калининград, Калининградская обл., Россия,
+                    236006ул. Дачная, 4, Калининград, Калининградская обл., Россия,
+                    236006</span></div>
+                <div class="card__actions">
+                  <a href="tel:+74012903800" class="card__tel icon icon-phone"><span>+7 (401-29) 0-38-00</span></a>
+                  <a href="#" class="card__button button button-small">Подробнее</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide shops__slide">
+            <article class="shops__card card shops__card--border-yellow">
+              <div class="card__image ibg">
+                <img src="img/clothes-foto.png" alt="image-shops">
+              </div>
+              <div class="card__content">
+                <div class="card__info flex">
+                  <div class="card__statistics flex">
+                    <div class="card__rating icon icon-star"><span>4.8</span></div>
+                    <div class="card__reviews icon icon-chat"><span>215</span></div>
+                  </div>
+                  <div class="card__info-actioin flex">
+                    <div class="card__map icon icon-map"></div>
+                    <div class="card__favorites icon icon-like-me"></div>
+                  </div>
+                </div>
+                <h3 class="card__title">Danke-Shop Благотворительный магазин в Калининграде 5*</h3>
+                <div class="card__locale icon icon-location"><span>ул. Дачная, 4, Калининград, Калининградская обл.,
+                    Россия,
+                    236006</span></div>
+                <div class="card__actions">
+                  <a href="tel:+74012903800" class="card__tel icon icon-phone"><span>+7 (401-29) 0-38-00</span></a>
+                  <a href="#" class="card__button button button-small">Подробнее</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="shops__swiper-pagination swiper-pagination"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+      <section class="ads-users  mt-section">
+  <div class="ads-users__container container">
+    <h2 class="ads-users__title">Объявления от <span>пользователей</span></h2>
+<div class="ads-users__wrapper wrapper-slider ">
+  <div class="ads-users__navigation navigation-slider">
+    <div class="navigation-slider__button prev ads-users__button-slider">
+      <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+        <path
+          d="M7.05006 9.90832L11.7667 5.19999C11.8442 5.12188 11.9364 5.05989 12.0379 5.01758C12.1395 4.97527 12.2484 4.95349 12.3584 4.95349C12.4684 4.95349 12.5773 4.97527 12.6789 5.01758C12.7804 5.05989 12.8726 5.12188 12.9501 5.19999C13.1053 5.35613 13.1924 5.56733 13.1924 5.78749C13.1924 6.00764 13.1053 6.21885 12.9501 6.37499L8.82506 10.5417L12.9501 14.6667C13.1053 14.8228 13.1924 15.034 13.1924 15.2542C13.1924 15.4743 13.1053 15.6855 12.9501 15.8417C12.8729 15.9204 12.7808 15.983 12.6793 16.026C12.5777 16.0689 12.4686 16.0912 12.3584 16.0917C12.2481 16.0912 12.1391 16.0689 12.0375 16.026C11.9359 15.983 11.8439 15.9204 11.7667 15.8417L7.05006 11.1333C6.96547 11.0553 6.89796 10.9606 6.85179 10.8552C6.80562 10.7497 6.78178 10.6359 6.78178 10.5208C6.78178 10.4057 6.80562 10.2919 6.85179 10.1865C6.89796 10.0811 6.96547 9.98636 7.05006 9.90832Z"
+          fill="#222222" />
+      </svg>
+    </div>
+    <div class="navigation-slider__button next ads-users__button-slider">
+      <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+        <path
+          d="M12.9499 9.90832L8.23328 5.19999C8.15581 5.12188 8.06364 5.05989 7.96209 5.01758C7.86054 4.97527 7.75162 4.95349 7.64161 4.95349C7.5316 4.95349 7.42268 4.97527 7.32113 5.01758C7.21958 5.05989 7.12741 5.12188 7.04994 5.19999C6.89474 5.35613 6.80762 5.56733 6.80762 5.78749C6.80762 6.00764 6.89474 6.21885 7.04994 6.37499L11.1749 10.5417L7.04994 14.6667C6.89474 14.8228 6.80762 15.034 6.80762 15.2542C6.80762 15.4743 6.89474 15.6855 7.04994 15.8417C7.12712 15.9204 7.21916 15.983 7.32072 16.026C7.42229 16.0689 7.53135 16.0912 7.64161 16.0917C7.75187 16.0912 7.86094 16.0689 7.9625 16.026C8.06406 15.983 8.1561 15.9204 8.23328 15.8417L12.9499 11.1333C13.0345 11.0553 13.102 10.9606 13.1482 10.8552C13.1944 10.7497 13.2182 10.6359 13.2182 10.5208C13.2182 10.4057 13.1944 10.2919 13.1482 10.1865C13.102 10.0811 13.0345 9.98636 12.9499 9.90832Z"
+          fill="#222222" />
+      </svg>
+    </div>
+  </div>
+  <div class="swiper ads-users__slider">
+
+    <div class="swiper-wrapper ads-users__swiper-wrapper">
+      <div class="swiper-slide ads-users__slide">
+        <article class="ads-users__ads-card card ads-card">
+          <div class="ads-card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="ads-card__content">
+
+            <h3 class="ads-card__title">Детские вещи 117-122 (7 лет)</h3>
+            <div class="ads-card__text">Продам детские вещи на мальчика 7-9 лет.
+            </div>
+            <div class="ads-card__actions">
+              <div class="ads-card__price"><span>€ 200</span></div>
+              <div href="#" class="ads-card__button button button-small button-small--blue  icon icon-to-chat"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-slide ads-users__slide">
+        <article class="ads-users__ads-card card ads-card">
+          <div class="ads-card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="ads-card__content">
+
+            <h3 class="ads-card__title">Детские вещи 117-122 (7 лет)</h3>
+            <div class="ads-card__text">Продам детские вещи на мальчика 7-9 лет.
+            </div>
+            <div class="ads-card__actions">
+              <div class="ads-card__price"><span>€ 200</span></div>
+              <div href="#" class="ads-card__button button button-small button-small--blue  icon icon-to-chat"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-slide ads-users__slide">
+        <article class="ads-users__ads-card card ads-card">
+          <div class="ads-card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="ads-card__content">
+
+            <h3 class="ads-card__title">Детские вещи 117-122 (7 лет)</h3>
+            <div class="ads-card__text">Продам детские вещи на мальчика 7-9 лет.
+            </div>
+            <div class="ads-card__actions">
+              <div class="ads-card__price"><span>€ 200</span></div>
+              <div href="#" class="ads-card__button button button-small button-small--blue  icon icon-to-chat"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-slide ads-users__slide">
+        <article class="ads-users__ads-card card ads-card">
+          <div class="ads-card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="ads-card__content">
+
+            <h3 class="ads-card__title">Детские вещи 117-122 (7 лет)</h3>
+            <div class="ads-card__text">Продам детские вещи на мальчика 7-9 лет.
+            </div>
+            <div class="ads-card__actions">
+              <div class="ads-card__price"><span>€ 200</span></div>
+              <div href="#" class="ads-card__button button button-small button-small--blue  icon icon-to-chat"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-slide ads-users__slide">
+        <article class="ads-users__ads-card card ads-card">
+          <div class="ads-card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="ads-card__content">
+
+            <h3 class="ads-card__title">Детские вещи 117-122 (7 лет)</h3>
+            <div class="ads-card__text">Продам детские вещи на мальчика 7-9 лет.
+            </div>
+            <div class="ads-card__actions">
+              <div class="ads-card__price"><span>€ 200</span></div>
+              <div href="#" class="ads-card__button button button-small button-small--blue  icon icon-to-chat"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-slide ads-users__slide">
+        <article class="ads-users__ads-card card ads-card">
+          <div class="ads-card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="ads-card__content">
+
+            <h3 class="ads-card__title">Детские вещи 117-122 (7 лет)</h3>
+            <div class="ads-card__text">Продам детские вещи на мальчика 7-9 лет.
+            </div>
+            <div class="ads-card__actions">
+              <div class="ads-card__price"><span>€ 200</span></div>
+              <div href="#" class="ads-card__button button button-small button-small--blue  icon icon-to-chat"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-slide ads-users__slide">
+        <article class="ads-users__ads-card card ads-card">
+          <div class="ads-card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="ads-card__content">
+
+            <h3 class="ads-card__title">Детские вещи 117-122 (7 лет)</h3>
+            <div class="ads-card__text">Продам детские вещи на мальчика 7-9 лет.
+            </div>
+            <div class="ads-card__actions">
+              <div class="ads-card__price"><span>€ 200</span></div>
+              <div href="#" class="ads-card__button button button-small button-small--blue  icon icon-to-chat"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-slide ads-users__slide">
+        <article class="ads-users__ads-card card ads-card">
+          <div class="ads-card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="ads-card__content">
+
+            <h3 class="ads-card__title">Детские вещи 117-122 (7 лет)</h3>
+            <div class="ads-card__text">Продам детские вещи на мальчика 7-9 лет.
+            </div>
+            <div class="ads-card__actions">
+              <div class="ads-card__price"><span>€ 200</span></div>
+              <div href="#" class="ads-card__button button button-small button-small--blue  icon icon-to-chat"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-slide ads-users__slide">
+        <article class="ads-users__ads-card card ads-card">
+          <div class="ads-card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="ads-card__content">
+
+            <h3 class="ads-card__title">Детские вещи 117-122 (7 лет)</h3>
+            <div class="ads-card__text">Продам детские вещи на мальчика 7-9 лет.
+            </div>
+            <div class="ads-card__actions">
+              <div class="ads-card__price"><span>€ 200</span></div>
+              <div href="#" class="ads-card__button button button-small button-small--blue  icon icon-to-chat"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+    <div class="ads-users__swiper-pagination swiper-pagination"></div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+      <section class="cta mt-section">
+  <div class="cta__container container">
+    <div class="cta__body">
+      <div class="cta__text">
+        Зарегистрируйтесь по номеру телефона, чтобы покупать и продовать на Second-Hand.shop
+      </div>
+      <div class="cta__bg-image pink-dress"></div>
+      <form class="cta__form">
+        <input class="cta__input" type="tel" id="phone" name="phone">
+        <button class="cta__button button button-yellow" type="submit">Войти</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+      <section class="shops mt-section">
+  <div class="shops__container container">
+    <div class="shops__header">
+      <h2 class="shops__title blue">Все секонд-хенды в <span>Калининграде</span></h2>
+      <div class="sort flex">
+        <div  tabindex="0" class="sort__wrapper custom-select control">
+          <div class="sort__header flex">
+            <div class="sort__label">Сначала:</div>
+            <div  class="sort__top custom-select__top">Новые</div>
+          </div>
+          <ul class="sort__list  list-reset flex btn">
+            <li class="sort__item  custom-select__item active"
+            data-value="new"
+            >Новые</li>
+            <li class="sort__item  custom-select__item"
+            data-value="popular"
+            >Популярные</li>
+            <li class="sort__item  custom-select__item"
+            data-value="best"
+            >Лучшие</li>
+            <li class="sort__item  custom-select__item"
+            data-value="verified"
+            >Проверенные</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="shops__body">
+
+      <div class="shops__items">
+        <!-- Здесь будут карточки магазинов -->
+        <article class="shops__card card">
+          <div class="card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="card__content">
+            <div class="card__info flex">
+              <div class="card__statistics flex">
+                <div class="card__rating icon icon-star"><span>4.8</span></div>
+                <div class="card__reviews icon icon-chat"><span>215</span></div>
+              </div>
+              <div class="card__info-actioin flex">
+                <div class="card__map icon icon-map"></div>
+                <div class="card__favorites icon icon-like-me"></div>
+              </div>
+            </div>
+            <h3 class="card__title">Danke-Shop Благотворительный магазин в Калининграде 5*</h3>
+            <div class="card__locale icon icon-location"><span>ул. Дачная, 4, Калининград, Калининградская обл.,
+                Россия,
+                236006</span></div>
+            <div class="card__actions">
+              <a href="tel:+74012903800" class="card__tel icon icon-phone"><span>+7 (401-29) 0-38-00</span></a>
+              <a href="#" class="card__button button button-small button-small--blue">Подробнее</a>
+            </div>
+          </div>
+        </article>
+        <article class="shops__card card">
+          <div class="card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="card__content">
+            <div class="card__info flex">
+              <div class="card__statistics flex">
+                <div class="card__rating icon icon-star"><span>4.8</span></div>
+                <div class="card__reviews icon icon-chat"><span>215</span></div>
+              </div>
+              <div class="card__info-actioin flex">
+                <div class="card__map icon icon-map"></div>
+                <div class="card__favorites icon icon-like-me"></div>
+              </div>
+            </div>
+            <h3 class="card__title">Danke-Shop Благотворительный магазин в Калининграде 5*</h3>
+            <div class="card__locale icon icon-location"><span>ул. Дачная, 4, Калининград, Калининградская обл.,
+                Россия,
+                236006</span></div>
+            <div class="card__actions">
+              <a href="tel:+74012903800" class="card__tel icon icon-phone"><span>+7 (401-29) 0-38-00</span></a>
+              <a href="#" class="card__button button button-small button-small--blue">Подробнее</a>
+            </div>
+          </div>
+        </article>
+        <article class="shops__card card">
+          <div class="card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="card__content">
+            <div class="card__info flex">
+              <div class="card__statistics flex">
+                <div class="card__rating icon icon-star"><span>4.8</span></div>
+                <div class="card__reviews icon icon-chat"><span>215</span></div>
+              </div>
+              <div class="card__info-actioin flex">
+                <div class="card__map icon icon-map"></div>
+                <div class="card__favorites icon icon-like-me"></div>
+              </div>
+            </div>
+            <h3 class="card__title">Danke-Shop Благотворительный магазин в Калининграде 5*</h3>
+            <div class="card__locale icon icon-location"><span>ул. Дачная, 4, Калининград, Калининградская обл.,
+                Россия,
+                236006</span></div>
+            <div class="card__actions">
+              <a href="tel:+74012903800" class="card__tel icon icon-phone"><span>+7 (401-29) 0-38-00</span></a>
+              <a href="#" class="card__button button button-small button-small--blue">Подробнее</a>
+            </div>
+          </div>
+        </article>
+        <article class="shops__card card">
+          <div class="card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="card__content">
+            <div class="card__info flex">
+              <div class="card__statistics flex">
+                <div class="card__rating icon icon-star"><span>4.8</span></div>
+                <div class="card__reviews icon icon-chat"><span>215</span></div>
+              </div>
+              <div class="card__info-actioin flex">
+                <div class="card__map icon icon-map"></div>
+                <div class="card__favorites icon icon-like-me"></div>
+              </div>
+            </div>
+            <h3 class="card__title">Danke-Shop Благотворительный магазин в Калининграде 5*</h3>
+            <div class="card__locale icon icon-location"><span>ул. Дачная, 4, Калининград, Калининградская обл.,
+                Россия,
+                236006</span></div>
+            <div class="card__actions">
+              <a href="tel:+74012903800" class="card__tel icon icon-phone"><span>+7 (401-29) 0-38-00</span></a>
+              <a href="#" class="card__button button button-small button-small--blue">Подробнее</a>
+            </div>
+          </div>
+        </article>
+        <article class="shops__card card">
+          <div class="card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="card__content">
+            <div class="card__info flex">
+              <div class="card__statistics flex">
+                <div class="card__rating icon icon-star"><span>4.8</span></div>
+                <div class="card__reviews icon icon-chat"><span>215</span></div>
+              </div>
+              <div class="card__info-actioin flex">
+                <div class="card__map icon icon-map"></div>
+                <div class="card__favorites icon icon-like-me"></div>
+              </div>
+            </div>
+            <h3 class="card__title">Danke-Shop Благотворительный магазин в Калининграде 5*</h3>
+            <div class="card__locale icon icon-location"><span>ул. Дачная, 4, Калининград, Калининградская обл.,
+                Россия,
+                236006</span></div>
+            <div class="card__actions">
+              <a href="tel:+74012903800" class="card__tel icon icon-phone"><span>+7 (401-29) 0-38-00</span></a>
+              <a href="#" class="card__button button button-small button-small--blue">Подробнее</a>
+            </div>
+          </div>
+        </article>
+        <article class="shops__card card">
+          <div class="card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="card__content">
+            <div class="card__info flex">
+              <div class="card__statistics flex">
+                <div class="card__rating icon icon-star"><span>4.8</span></div>
+                <div class="card__reviews icon icon-chat"><span>215</span></div>
+              </div>
+              <div class="card__info-actioin flex">
+                <div class="card__map icon icon-map"></div>
+                <div class="card__favorites icon icon-like-me"></div>
+              </div>
+            </div>
+            <h3 class="card__title">Danke-Shop Благотворительный магазин в Калининграде 5*</h3>
+            <div class="card__locale icon icon-location"><span>ул. Дачная, 4, Калининград, Калининградская обл.,
+                Россия,
+                236006</span></div>
+            <div class="card__actions">
+              <a href="tel:+74012903800" class="card__tel icon icon-phone"><span>+7 (401-29) 0-38-00</span></a>
+              <a href="#" class="card__button button button-small button-small--blue">Подробнее</a>
+            </div>
+          </div>
+        </article>
+        <article class="shops__card card">
+          <div class="card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="card__content">
+            <div class="card__info flex">
+              <div class="card__statistics flex">
+                <div class="card__rating icon icon-star"><span>4.8</span></div>
+                <div class="card__reviews icon icon-chat"><span>215</span></div>
+              </div>
+              <div class="card__info-actioin flex">
+                <div class="card__map icon icon-map"></div>
+                <div class="card__favorites icon icon-like-me"></div>
+              </div>
+            </div>
+            <h3 class="card__title">Danke-Shop Благотворительный магазин в Калининграде 5*</h3>
+            <div class="card__locale icon icon-location"><span>ул. Дачная, 4, Калининград, Калининградская обл.,
+                Россия,
+                236006</span></div>
+            <div class="card__actions">
+              <a href="tel:+74012903800" class="card__tel icon icon-phone"><span>+7 (401-29) 0-38-00</span></a>
+              <a href="#" class="card__button button button-small button-small--blue">Подробнее</a>
+            </div>
+          </div>
+        </article>
+        <article class="shops__card card">
+          <div class="card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="card__content">
+            <div class="card__info flex">
+              <div class="card__statistics flex">
+                <div class="card__rating icon icon-star"><span>4.8</span></div>
+                <div class="card__reviews icon icon-chat"><span>215</span></div>
+              </div>
+              <div class="card__info-actioin flex">
+                <div class="card__map icon icon-map"></div>
+                <div class="card__favorites icon icon-like-me"></div>
+              </div>
+            </div>
+            <h3 class="card__title">Danke-Shop Благотворительный магазин в Калининграде 5*</h3>
+            <div class="card__locale icon icon-location"><span>ул. Дачная, 4, Калининград, Калининградская обл.,
+                Россия,
+                236006</span></div>
+            <div class="card__actions">
+              <a href="tel:+74012903800" class="card__tel icon icon-phone"><span>+7 (401-29) 0-38-00</span></a>
+              <a href="#" class="card__button button button-small button-small--blue">Подробнее</a>
+            </div>
+          </div>
+        </article>
+        <a href="#" class="shops__card card card__image-ad ibg">
+            <img src="img/ad.png" alt="image-shops">
+        </a>
+        <article class="shops__card card">
+          <div class="card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="card__content">
+            <div class="card__info flex">
+              <div class="card__statistics flex">
+                <div class="card__rating icon icon-star"><span>4.8</span></div>
+                <div class="card__reviews icon icon-chat"><span>215</span></div>
+              </div>
+              <div class="card__info-actioin flex">
+                <div class="card__map icon icon-map"></div>
+                <div class="card__favorites icon icon-like-me"></div>
+              </div>
+            </div>
+            <h3 class="card__title">Danke-Shop Благотворительный магазин в Калининграде 5*</h3>
+            <div class="card__locale icon icon-location"><span>ул. Дачная, 4, Калининград, Калининградская обл.,
+                Россия,
+                236006</span></div>
+            <div class="card__actions">
+              <a href="tel:+74012903800" class="card__tel icon icon-phone"><span>+7 (401-29) 0-38-00</span></a>
+              <a href="#" class="card__button button button-small button-small--blue">Подробнее</a>
+            </div>
+          </div>
+        </article>
+        <article class="shops__card card">
+          <div class="card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="card__content">
+            <div class="card__info flex">
+              <div class="card__statistics flex">
+                <div class="card__rating icon icon-star"><span>4.8</span></div>
+                <div class="card__reviews icon icon-chat"><span>215</span></div>
+              </div>
+              <div class="card__info-actioin flex">
+                <div class="card__map icon icon-map"></div>
+                <div class="card__favorites icon icon-like-me"></div>
+              </div>
+            </div>
+            <h3 class="card__title">Danke-Shop Благотворительный магазин в Калининграде 5*</h3>
+            <div class="card__locale icon icon-location"><span>ул. Дачная, 4, Калининград, Калининградская обл.,
+                Россия,
+                236006</span></div>
+            <div class="card__actions">
+              <a href="tel:+74012903800" class="card__tel icon icon-phone"><span>+7 (401-29) 0-38-00</span></a>
+              <a href="#" class="card__button button button-small button-small--blue">Подробнее</a>
+            </div>
+          </div>
+        </article>
+        <article class="shops__card card">
+          <div class="card__image ibg">
+            <img src="img/clothes-foto.png" alt="image-shops">
+          </div>
+          <div class="card__content">
+            <div class="card__info flex">
+              <div class="card__statistics flex">
+                <div class="card__rating icon icon-star"><span>4.8</span></div>
+                <div class="card__reviews icon icon-chat"><span>215</span></div>
+              </div>
+              <div class="card__info-actioin flex">
+                <div class="card__map icon icon-map"></div>
+                <div class="card__favorites icon icon-like-me"></div>
+              </div>
+            </div>
+            <h3 class="card__title">Danke-Shop Благотворительный магазин в Калининграде 5*</h3>
+            <div class="card__locale icon icon-location"><span>ул. Дачная, 4, Калининград, Калининградская обл.,
+                Россия,
+                236006</span></div>
+            <div class="card__actions">
+              <a href="tel:+74012903800" class="card__tel icon icon-phone"><span>+7 (401-29) 0-38-00</span></a>
+              <a href="#" class="card__button button button-small button-small--blue">Подробнее</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="shops__all-pagination all-pagination">
+        <span class="all-pagination__current-page">1</span>
+        <a href="#" class="all-pagination__page-link">2</a>
+        <a href="#" class="all-pagination__page-link">3</a>
+        <a href="#" class="all-pagination__page-link">4</a>
+        <a href="#" class="all-pagination__page-link">5</a>
+        <!-- Добавьте нужное количество страниц -->
+        <a href="#" class="all-pagination__last-page">22</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+      <section class="reviews mt-section">
+  <div class="reviews__container container">
+    <h2 class="reviews__title blue">Последние <span>отзывы</span></h2>
+    <div class="reviews__slider-wrapper wrapper-slider">
+      <div class="reviews__navigation navigation-slider">
+        <div class="navigation-slider__button prev reviews__button-slider">
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path
+              d="M7.05006 9.90832L11.7667 5.19999C11.8442 5.12188 11.9364 5.05989 12.0379 5.01758C12.1395 4.97527 12.2484 4.95349 12.3584 4.95349C12.4684 4.95349 12.5773 4.97527 12.6789 5.01758C12.7804 5.05989 12.8726 5.12188 12.9501 5.19999C13.1053 5.35613 13.1924 5.56733 13.1924 5.78749C13.1924 6.00764 13.1053 6.21885 12.9501 6.37499L8.82506 10.5417L12.9501 14.6667C13.1053 14.8228 13.1924 15.034 13.1924 15.2542C13.1924 15.4743 13.1053 15.6855 12.9501 15.8417C12.8729 15.9204 12.7808 15.983 12.6793 16.026C12.5777 16.0689 12.4686 16.0912 12.3584 16.0917C12.2481 16.0912 12.1391 16.0689 12.0375 16.026C11.9359 15.983 11.8439 15.9204 11.7667 15.8417L7.05006 11.1333C6.96547 11.0553 6.89796 10.9606 6.85179 10.8552C6.80562 10.7497 6.78178 10.6359 6.78178 10.5208C6.78178 10.4057 6.80562 10.2919 6.85179 10.1865C6.89796 10.0811 6.96547 9.98636 7.05006 9.90832Z"
+              fill="#222222" />
+          </svg>
+        </div>
+        <div class="navigation-slider__button next reviews__button-slider">
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path
+              d="M12.9499 9.90832L8.23328 5.19999C8.15581 5.12188 8.06364 5.05989 7.96209 5.01758C7.86054 4.97527 7.75162 4.95349 7.64161 4.95349C7.5316 4.95349 7.42268 4.97527 7.32113 5.01758C7.21958 5.05989 7.12741 5.12188 7.04994 5.19999C6.89474 5.35613 6.80762 5.56733 6.80762 5.78749C6.80762 6.00764 6.89474 6.21885 7.04994 6.37499L11.1749 10.5417L7.04994 14.6667C6.89474 14.8228 6.80762 15.034 6.80762 15.2542C6.80762 15.4743 6.89474 15.6855 7.04994 15.8417C7.12712 15.9204 7.21916 15.983 7.32072 16.026C7.42229 16.0689 7.53135 16.0912 7.64161 16.0917C7.75187 16.0912 7.86094 16.0689 7.9625 16.026C8.06406 15.983 8.1561 15.9204 8.23328 15.8417L12.9499 11.1333C13.0345 11.0553 13.102 10.9606 13.1482 10.8552C13.1944 10.7497 13.2182 10.6359 13.2182 10.5208C13.2182 10.4057 13.1944 10.2919 13.1482 10.1865C13.102 10.0811 13.0345 9.98636 12.9499 9.90832Z"
+              fill="#222222" />
+          </svg>
+        </div>
+      </div>
+      <div class="reviews__slider swiper">
+        <div class="swiper-wrapper reviews__swiper-wrapper">
+          <div class="swiper-slide reviews__slide">
+            <div class="reviews__card card card-review">
+              <div class="card-review__row">
+                <div class="card-review__header">
+                  <div class="card-review__label text-grey-13">Магазин</div>
+                  <div class="card-review__rating icon icon-star"><span>4.8</span></div>
+                </div>
+                <div class="card-review__content">
+                  <h3 class="card-review__name">
+                    Danke-Shop Благотворительный магазин в Калининграде 5*
+                  </h3>
+                  <div class="card-review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Lectus mauris ultrices eros in cursus turpis massa.
+                  </div>
+                </div>
+              </div>
+              <div class="card-review__row">
+                <div class="card-review__header">
+                  <div class="card-review__label text-grey-13">Ответ магазина:</div>
+                </div>
+                <div class="card-review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum suspendisse
+                </div>
+              </div>
+              <a href="#" class="card__button button button-small button-small--blue">О магазине</a>
+            </div>
+          </div>
+          <div class="swiper-slide reviews__slide">
+            <div class="reviews__card card card-review">
+              <div class="card-review__row">
+                <div class="card-review__header">
+                  <div class="card-review__label text-grey-13">Магазин</div>
+                  <div class="card-review__rating icon icon-star"><span>4.8</span></div>
+                </div>
+                <div class="card-review__content">
+                  <h3 class="card-review__name">
+                    Danke-Shop Благотворительный магазин в Калининграде 5*
+                  </h3>
+                  <div class="card-review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Lectus mauris ultrices eros in cursus turpis massa.
+                  </div>
+                </div>
+              </div>
+              <div class="card-review__row">
+                <div class="card-review__header">
+                  <div class="card-review__label text-grey-13">Ответ магазина:</div>
+                </div>
+                <div class="card-review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum suspendisse
+                </div>
+              </div>
+              <a href="#" class="card__button button button-small button-small--blue">О магазине</a>
+            </div>
+          </div>
+          <div class="swiper-slide reviews__slide">
+            <div class="reviews__card card card-review">
+              <div class="card-review__row">
+                <div class="card-review__header">
+                  <div class="card-review__label text-grey-13">Магазин</div>
+                  <div class="card-review__rating icon icon-star"><span>4.8</span></div>
+                </div>
+                <div class="card-review__content">
+                  <h3 class="card-review__name">
+                    Danke-Shop Благотворительный магазин в Калининграде 5*
+                  </h3>
+                  <div class="card-review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Lectus mauris ultrices eros in cursus turpis massa.
+                  </div>
+                </div>
+              </div>
+              <div class="card-review__row">
+                <div class="card-review__header">
+                  <div class="card-review__label text-grey-13">Ответ магазина:</div>
+                </div>
+                <div class="card-review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum suspendisse
+                </div>
+              </div>
+              <a href="#" class="card__button button button-small button-small--blue ">О магазине</a>
+            </div>
+          </div>
+          <div class="swiper-slide reviews__slide">
+            <div class="reviews__card card card-review">
+              <div class="card-review__row">
+                <div class="card-review__header">
+                  <div class="card-review__label text-grey-13">Магазин</div>
+                  <div class="card-review__rating icon icon-star"><span>4.8</span></div>
+                </div>
+                <div class="card-review__content">
+                  <h3 class="card-review__name">
+                    Danke-Shop Благотворительный магазин в Калининграде 5*
+                  </h3>
+                  <div class="card-review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Lectus mauris ultrices eros in cursus turpis massa.
+                  </div>
+                </div>
+              </div>
+              <div class="card-review__row">
+                <div class="card-review__header">
+                  <div class="card-review__label text-grey-13">Ответ магазина:</div>
+                </div>
+                <div class="card-review__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum suspendisse
+                </div>
+              </div>
+              <a href="#" class="card__button button button-small button-small--blue">О магазине</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="reviews__swiper-pagination swiper-pagination"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+      <section class="cta mt-section">
+  <div class="cta__container container">
+    <div class="cta__body cta__body--50p">
+      <div class="cta__text">
+        Расскажите о нас в соц. сетях и получите бонусы
+      </div>
+      <div class="cta__bg-image girl-bg"></div>
+      <div class="cta__socials">
+        <a href="#" class="cta__button button button-yellow icon icon-viber"></a>
+        <a href="#" class="cta__button button button-yellow icon icon-facebook"></a>
+        <a href="#" class="cta__button button button-yellow icon icon-vk"></a>
+      </div>
+      <!-- <form class="cta__form">
+        <input class="cta__input" type="tel" id="phone" name="phone">
+        <button class="cta__button button button-yellow" type="submit">Войти</button>
+      </form> -->
+    </div>
+  </div>
+</section>
+
+      <section class="news mt-section">
+  <div class="news__container container">
+    <h2 class="news__title blue">
+      Новости и акции в <span>Калининграде</span>
+    </h2>
+    <div class="news__wrapper">
+      <div class="news__navigation navigation-slider">
+        <div class="navigation-slider__button news__button-slider prev">
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path
+              d="M7.05006 9.90832L11.7667 5.19999C11.8442 5.12188 11.9364 5.05989 12.0379 5.01758C12.1395 4.97527 12.2484 4.95349 12.3584 4.95349C12.4684 4.95349 12.5773 4.97527 12.6789 5.01758C12.7804 5.05989 12.8726 5.12188 12.9501 5.19999C13.1053 5.35613 13.1924 5.56733 13.1924 5.78749C13.1924 6.00764 13.1053 6.21885 12.9501 6.37499L8.82506 10.5417L12.9501 14.6667C13.1053 14.8228 13.1924 15.034 13.1924 15.2542C13.1924 15.4743 13.1053 15.6855 12.9501 15.8417C12.8729 15.9204 12.7808 15.983 12.6793 16.026C12.5777 16.0689 12.4686 16.0912 12.3584 16.0917C12.2481 16.0912 12.1391 16.0689 12.0375 16.026C11.9359 15.983 11.8439 15.9204 11.7667 15.8417L7.05006 11.1333C6.96547 11.0553 6.89796 10.9606 6.85179 10.8552C6.80562 10.7497 6.78178 10.6359 6.78178 10.5208C6.78178 10.4057 6.80562 10.2919 6.85179 10.1865C6.89796 10.0811 6.96547 9.98636 7.05006 9.90832Z"
+              fill="#222222" />
+          </svg>
+        </div>
+        <div class="navigation-slider__button news__button-slider next">
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path
+              d="M12.9499 9.90832L8.23328 5.19999C8.15581 5.12188 8.06364 5.05989 7.96209 5.01758C7.86054 4.97527 7.75162 4.95349 7.64161 4.95349C7.5316 4.95349 7.42268 4.97527 7.32113 5.01758C7.21958 5.05989 7.12741 5.12188 7.04994 5.19999C6.89474 5.35613 6.80762 5.56733 6.80762 5.78749C6.80762 6.00764 6.89474 6.21885 7.04994 6.37499L11.1749 10.5417L7.04994 14.6667C6.89474 14.8228 6.80762 15.034 6.80762 15.2542C6.80762 15.4743 6.89474 15.6855 7.04994 15.8417C7.12712 15.9204 7.21916 15.983 7.32072 16.026C7.42229 16.0689 7.53135 16.0912 7.64161 16.0917C7.75187 16.0912 7.86094 16.0689 7.9625 16.026C8.06406 15.983 8.1561 15.9204 8.23328 15.8417L12.9499 11.1333C13.0345 11.0553 13.102 10.9606 13.1482 10.8552C13.1944 10.7497 13.2182 10.6359 13.2182 10.5208C13.2182 10.4057 13.1944 10.2919 13.1482 10.1865C13.102 10.0811 13.0345 9.98636 12.9499 9.90832Z"
+              fill="#222222" />
+          </svg>
+        </div>
+      </div>
+      <div class="swiper news__slider">
+        <div class="swiper-wrapper news__swiper-wrapper">
+          <div class="swiper-slide news__slide">
+            <article class="news__ads-card card ads-card">
+              <div class="ads-card__image ibg">
+                <img src="img/clothes-foto.png" alt="image-shops">
+              </div>
+              <div class="ads-card__content">
+                <a href="#" class="ads-card__label text-grey-13">Danke-Shop Благотворительный магазин в Калининграде 5*</a>
+                <h3 class="ads-card__title">Новое поступление весенней коллекции</h3>
+                <div class="ads-card__text">
+                  <p>Продам детские вещи на маль
+                    22 февраля будет новый завоз женской и мужское одежды на весенний сезон.</p>
+                  <p>Скидки до 20%. Успейте купить!</p>
+                </div>
+                <div class="ads-card__date grey">
+                  14 февраля
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide news__slide">
+            <article class="news__ads-card card ads-card">
+              <div class="ads-card__image ibg">
+                <img src="img/clothes-foto.png" alt="image-shops">
+              </div>
+              <div class="ads-card__content">
+                <a href="#" class="ads-card__label text-grey-13">Danke-Shop Благотворительный магазин в Калининграде 5*</a>
+                <h3 class="ads-card__title">Новое поступление весенней коллекции</h3>
+                <div class="ads-card__text">
+                  <p>Продам детские вещи на маль
+                    22 февраля будет новый завоз женской и мужское одежды на весенний сезон.</p>
+                  <p>Скидки до 20%. Успейте купить!</p>
+                </div>
+                <div class="ads-card__date grey">
+                  14 февраля
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide news__slide">
+            <article class="news__ads-card card ads-card">
+              <div class="ads-card__image ibg">
+                <img src="img/clothes-foto.png" alt="image-shops">
+              </div>
+              <div class="ads-card__content">
+                <a href="#" class="ads-card__label text-grey-13">Danke-Shop Благотворительный магазин в Калининграде 5*</a>
+                <h3 class="ads-card__title">Новое поступление весенней коллекции</h3>
+                <div class="ads-card__text">
+                  <p>Продам детские вещи на маль
+                    22 февраля будет новый завоз женской и мужское одежды на весенний сезон.</p>
+                  <p>Скидки до 20%. Успейте купить!</p>
+                </div>
+                <div class="ads-card__date grey">
+                  14 февраля
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide news__slide">
+            <article class="news__ads-card card ads-card">
+              <div class="ads-card__image ibg">
+                <img src="img/clothes-foto.png" alt="image-shops">
+              </div>
+              <div class="ads-card__content">
+                <a href="#" class="ads-card__label text-grey-13">Danke-Shop Благотворительный магазин в Калининграде 5*</a>
+                <h3 class="ads-card__title">Новое поступление весенней коллекции</h3>
+                <div class="ads-card__text">
+                  <p>Продам детские вещи на маль
+                    22 февраля будет новый завоз женской и мужское одежды на весенний сезон.</p>
+                  <p>Скидки до 20%. Успейте купить!</p>
+                </div>
+                <div class="ads-card__date grey">
+                  14 февраля
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide news__slide">
+            <article class="news__ads-card card ads-card">
+              <div class="ads-card__image ibg">
+                <img src="img/clothes-foto.png" alt="image-shops">
+              </div>
+              <div class="ads-card__content">
+                <a href="#" class="ads-card__label text-grey-13">Danke-Shop Благотворительный магазин в Калининграде 5*</a>
+                <h3 class="ads-card__title">Новое поступление весенней коллекции</h3>
+                <div class="ads-card__text">
+                  <p>Продам детские вещи на маль
+                    22 февраля будет новый завоз женской и мужское одежды на весенний сезон.</p>
+                  <p>Скидки до 20%. Успейте купить!</p>
+                </div>
+                <div class="ads-card__date grey">
+                  14 февраля
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide news__slide">
+            <article class="news__ads-card card ads-card">
+              <div class="ads-card__image ibg">
+                <img src="img/clothes-foto.png" alt="image-shops">
+              </div>
+              <div class="ads-card__content">
+                <a href="#" class="ads-card__label text-grey-13">Danke-Shop Благотворительный магазин в Калининграде 5*</a>
+                <h3 class="ads-card__title">Новое поступление весенней коллекции</h3>
+                <div class="ads-card__text">
+                  <p>Продам детские вещи на маль
+                    22 февраля будет новый завоз женской и мужское одежды на весенний сезон.</p>
+                  <p>Скидки до 20%. Успейте купить!</p>
+                </div>
+                <div class="ads-card__date grey">
+                  14 февраля
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide news__slide">
+            <article class="news__ads-card card ads-card">
+              <div class="ads-card__image ibg">
+                <img src="img/clothes-foto.png" alt="image-shops">
+              </div>
+              <div class="ads-card__content">
+                <a href="#" class="ads-card__label text-grey-13">Danke-Shop Благотворительный магазин в Калининграде 5*</a>
+                <h3 class="ads-card__title">Новое поступление весенней коллекции</h3>
+                <div class="ads-card__text">
+                  <p>Продам детские вещи на маль
+                    22 февраля будет новый завоз женской и мужское одежды на весенний сезон.</p>
+                  <p>Скидки до 20%. Успейте купить!</p>
+                </div>
+                <div class="ads-card__date grey">
+                  14 февраля
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="news__swiper-pagination swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="advantages mt-section">
+  <div class="advantages__container container">
+    <h2 class="advantages__title blue">
+      Почему <span>Second-Hand.shop</span>
+    </h2>
+    <div class="advantages__body">
+      <div class="advantages__item card">
+        <div class="advantages__image">
+          <img src="img/svg/shop.svg" alt="advantages">
+        </div>
+        <div class="advantages__text">
+          Более 126 магазинов во всех районах города
+        </div>
+      </div>
+      <div class="advantages__item card">
+        <div class="advantages__image">
+          <img src="img/svg/shop.svg" alt="advantages">
+        </div>
+        <div class="advantages__text">
+          Более 126 магазинов во всех районах города
+        </div>
+      </div>
+      <div class="advantages__item card">
+        <div class="advantages__image">
+          <img src="img/svg/shop.svg" alt="advantages">
+        </div>
+        <div class="advantages__text">
+          Более 126 магазинов во всех районах города
+        </div>
+      </div>
+      <div class="advantages__item card">
+        <div class="advantages__image">
+          <img src="img/svg/shop.svg" alt="advantages">
+        </div>
+        <div class="advantages__text">
+          Более 126 магазинов во всех районах города
+        </div>
+      </div>
+      <div class="advantages__item card">
+        <div class="advantages__image">
+          <img src="img/svg/shop.svg" alt="advantages">
+        </div>
+        <div class="advantages__text">
+          Более 126 магазинов во всех районах города
+        </div>
+      </div>
+      <div class="advantages__item card">
+        <div class="advantages__image">
+          <img src="img/svg/shop.svg" alt="advantages">
+        </div>
+        <div class="advantages__text">
+          Более 126 магазинов во всех районах города
+        </div>
+      </div>
+      <div class="advantages__item card">
+        <div class="advantages__image">
+          <img src="img/svg/shop.svg" alt="advantages">
+        </div>
+        <div class="advantages__text">
+          Более 126 магазинов во всех районах города
+        </div>
+      </div>
+      <div class="advantages__item card">
+        <div class="advantages__image">
+          <img src="img/svg/shop.svg" alt="advantages">
+        </div>
+        <div class="advantages__text">
+          Более 126 магазинов во всех районах города
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div class="ad-block mt-section">
+  <div class="ad-block__container container">
+    <a href="#" class="ad-block__item ibg">
+      <img src="img/ad-block-example.png" alt="image">
+    </a>
+  </div>
+</div>
+
+      <section class="reviews-social mt-section">
+  <div class="reviews-social__container container">
+    <h2 class="reviews-social__title">
+      О магазинах в <span>соц. сетях</span>
+    </h2>
+    <div class="reviews-social__wrapper-slider wrapper-slider">
+      <div class="reviews-social__navigation navigation-slider">
+        <div class="navigation-slider__button prev reviews-social__button-slider">
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path
+              d="M7.05006 9.90832L11.7667 5.19999C11.8442 5.12188 11.9364 5.05989 12.0379 5.01758C12.1395 4.97527 12.2484 4.95349 12.3584 4.95349C12.4684 4.95349 12.5773 4.97527 12.6789 5.01758C12.7804 5.05989 12.8726 5.12188 12.9501 5.19999C13.1053 5.35613 13.1924 5.56733 13.1924 5.78749C13.1924 6.00764 13.1053 6.21885 12.9501 6.37499L8.82506 10.5417L12.9501 14.6667C13.1053 14.8228 13.1924 15.034 13.1924 15.2542C13.1924 15.4743 13.1053 15.6855 12.9501 15.8417C12.8729 15.9204 12.7808 15.983 12.6793 16.026C12.5777 16.0689 12.4686 16.0912 12.3584 16.0917C12.2481 16.0912 12.1391 16.0689 12.0375 16.026C11.9359 15.983 11.8439 15.9204 11.7667 15.8417L7.05006 11.1333C6.96547 11.0553 6.89796 10.9606 6.85179 10.8552C6.80562 10.7497 6.78178 10.6359 6.78178 10.5208C6.78178 10.4057 6.80562 10.2919 6.85179 10.1865C6.89796 10.0811 6.96547 9.98636 7.05006 9.90832Z"
+              fill="#222222" />
+          </svg>
+        </div>
+        <div class="navigation-slider__button next reviews-social__button-slider">
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path
+              d="M12.9499 9.90832L8.23328 5.19999C8.15581 5.12188 8.06364 5.05989 7.96209 5.01758C7.86054 4.97527 7.75162 4.95349 7.64161 4.95349C7.5316 4.95349 7.42268 4.97527 7.32113 5.01758C7.21958 5.05989 7.12741 5.12188 7.04994 5.19999C6.89474 5.35613 6.80762 5.56733 6.80762 5.78749C6.80762 6.00764 6.89474 6.21885 7.04994 6.37499L11.1749 10.5417L7.04994 14.6667C6.89474 14.8228 6.80762 15.034 6.80762 15.2542C6.80762 15.4743 6.89474 15.6855 7.04994 15.8417C7.12712 15.9204 7.21916 15.983 7.32072 16.026C7.42229 16.0689 7.53135 16.0912 7.64161 16.0917C7.75187 16.0912 7.86094 16.0689 7.9625 16.026C8.06406 15.983 8.1561 15.9204 8.23328 15.8417L12.9499 11.1333C13.0345 11.0553 13.102 10.9606 13.1482 10.8552C13.1944 10.7497 13.2182 10.6359 13.2182 10.5208C13.2182 10.4057 13.1944 10.2919 13.1482 10.1865C13.102 10.0811 13.0345 9.98636 12.9499 9.90832Z"
+              fill="#222222" />
+          </svg>
+        </div>
+      </div>
+      <div class="reviews-social__slider swiper">
+        <div class="reviews-social__wrapper swiper-wrapper">
+          <div class="reviews-social__slide swiper-slide">
+            <div class="reviews-social-card card">
+              <div class="reviews-social-card__header">
+                <div class="reviews-social-card__label text-grey-13">FaceBook</div>
+                <div class="reviews-social-card__date text-grey-13">14.02.2023</div>
+              </div>
+              <div class="reviews-social-card__user">
+                <img class="reviews-social-card__image" src="img/user-example.png" alt="user-image">
+                <div class="reviews-social-card__user-name">Елена Грозная</div>
+              </div>
+              <div class="reviews-social-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Lectus mauris ultrices eros in cursus turpis massa.
+              </div>
+              <div class="reviews-social-card__footer">
+                <div class="reviews-social-card__label text-grey-13">
+                  О магазине
+                </div>
+                <a href="#" class="reviews-social-card__link">Danke-Shop Благотворительный магазин в Калининграде 5*</a>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-social__slide swiper-slide">
+            <div class="reviews-social-card card">
+              <div class="reviews-social-card__header">
+                <div class="reviews-social-card__label text-grey-13">FaceBook</div>
+                <div class="reviews-social-card__date text-grey-13">14.02.2023</div>
+              </div>
+              <div class="reviews-social-card__user">
+                <img class="reviews-social-card__image" src="img/user-example.png" alt="user-image">
+                <div class="reviews-social-card__user-name">Елена Грозная</div>
+              </div>
+              <div class="reviews-social-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Lectus mauris ultrices eros in cursus turpis massa.
+              </div>
+              <div class="reviews-social-card__footer">
+                <div class="reviews-social-card__label text-grey-13">
+                  О магазине
+                </div>
+                <a href="#" class="reviews-social-card__link">Danke-Shop Благотворительный магазин в Калининграде 5*</a>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-social__slide swiper-slide">
+            <div class="reviews-social-card card">
+              <div class="reviews-social-card__header">
+                <div class="reviews-social-card__label text-grey-13">FaceBook</div>
+                <div class="reviews-social-card__date text-grey-13">14.02.2023</div>
+              </div>
+              <div class="reviews-social-card__user">
+                <img class="reviews-social-card__image" src="img/user-example.png" alt="user-image">
+                <div class="reviews-social-card__user-name">Елена Грозная</div>
+              </div>
+              <div class="reviews-social-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Lectus mauris ultrices eros in cursus turpis massa.
+              </div>
+              <div class="reviews-social-card__footer">
+                <div class="reviews-social-card__label text-grey-13">
+                  О магазине
+                </div>
+                <a href="#" class="reviews-social-card__link">Danke-Shop Благотворительный магазин в Калининграде 5*</a>
+              </div>
+            </div>
+          </div>
+          <div class="reviews-social__slide swiper-slide">
+            <div class="reviews-social-card card">
+              <div class="reviews-social-card__header">
+                <div class="reviews-social-card__label text-grey-13">FaceBook</div>
+                <div class="reviews-social-card__date text-grey-13">14.02.2023</div>
+              </div>
+              <div class="reviews-social-card__user">
+                <img class="reviews-social-card__image" src="img/user-example.png" alt="user-image">
+                <div class="reviews-social-card__user-name">Елена Грозная</div>
+              </div>
+              <div class="reviews-social-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Lectus mauris ultrices eros in cursus turpis massa.
+              </div>
+              <div class="reviews-social-card__footer">
+                <div class="reviews-social-card__label text-grey-13">
+                  О магазине
+                </div>
+                <a href="#" class="reviews-social-card__link">Danke-Shop Благотворительный магазин в Калининграде 5*</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-social__swiper-pagination swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="content mt-section">
+  <div class="content__container container">
+    <h2 class="content__title">
+      Контентный блок
+    </h2>
+    <div class="content__body">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Lectus mauris ultrices eros in cursus
+        turpis massa. Pretium vulputate sapien nec sagittis aliquam malesuada. Turpis massa tincidunt dui ut ornare lectus
+        sit amet est. Neque volutpat ac tincidunt vitae semper quis lectus nulla. Consectetur adipiscing elit duis
+        tristique sollicitudin nibh. Vivamus at augue eget arcu dictum varius duis at consectetur. Lorem ipsum dolor sit
+        amet consectetur. Semper quis lectus nulla at volutpat diam. In egestas erat imperdiet sed.
+      </p>
+      <p>
+        Morbi leo urna molestie at. Est velit egestas dui id ornare arcu odio. Vivamus at augue eget arcu. Pulvinar mattis
+        nunc sed blandit libero volutpat. Arcu non odio euismod lacinia at quis risus. Vulputate ut pharetra sit amet
+        aliquam id diam. Nulla at volutpat diam ut venenatis tellus in. Morbi tristique senectus et netus. Nisl nisi
+        scelerisque eu ultrices vitae auctor eu. In fermentum et sollicitudin ac orci phasellus egestas. Id porta nibh
+        venenatis cras sed felis. Est ante in nibh mauris. Integer enim neque volutpat ac tincidunt vitae semper. Pulvinar
+        etiam non quam lacus suspendisse faucibus interdum posuere.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="shops-nearby mt-section">
+  <div class="shops-nearby__container container">
+    <h2 class="shops-nearby__title">
+      Секонд-хенды рядом с <span>Калининградом</span>
+    </h2>
+    <div class="shops-nearby__wrapper-slider wrapper-slider">
+      <div class="shops-nearby__navigation navigation-slider">
+        <div class="navigation-slider__button prev shops-nearby__button-slide">
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path
+              d="M7.05006 9.90832L11.7667 5.19999C11.8442 5.12188 11.9364 5.05989 12.0379 5.01758C12.1395 4.97527 12.2484 4.95349 12.3584 4.95349C12.4684 4.95349 12.5773 4.97527 12.6789 5.01758C12.7804 5.05989 12.8726 5.12188 12.9501 5.19999C13.1053 5.35613 13.1924 5.56733 13.1924 5.78749C13.1924 6.00764 13.1053 6.21885 12.9501 6.37499L8.82506 10.5417L12.9501 14.6667C13.1053 14.8228 13.1924 15.034 13.1924 15.2542C13.1924 15.4743 13.1053 15.6855 12.9501 15.8417C12.8729 15.9204 12.7808 15.983 12.6793 16.026C12.5777 16.0689 12.4686 16.0912 12.3584 16.0917C12.2481 16.0912 12.1391 16.0689 12.0375 16.026C11.9359 15.983 11.8439 15.9204 11.7667 15.8417L7.05006 11.1333C6.96547 11.0553 6.89796 10.9606 6.85179 10.8552C6.80562 10.7497 6.78178 10.6359 6.78178 10.5208C6.78178 10.4057 6.80562 10.2919 6.85179 10.1865C6.89796 10.0811 6.96547 9.98636 7.05006 9.90832Z"
+              fill="#222222" />
+          </svg>
+        </div>
+        <div class="navigation-slider__button next shops-nearby__button-slide">
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none">
+            <path
+              d="M12.9499 9.90832L8.23328 5.19999C8.15581 5.12188 8.06364 5.05989 7.96209 5.01758C7.86054 4.97527 7.75162 4.95349 7.64161 4.95349C7.5316 4.95349 7.42268 4.97527 7.32113 5.01758C7.21958 5.05989 7.12741 5.12188 7.04994 5.19999C6.89474 5.35613 6.80762 5.56733 6.80762 5.78749C6.80762 6.00764 6.89474 6.21885 7.04994 6.37499L11.1749 10.5417L7.04994 14.6667C6.89474 14.8228 6.80762 15.034 6.80762 15.2542C6.80762 15.4743 6.89474 15.6855 7.04994 15.8417C7.12712 15.9204 7.21916 15.983 7.32072 16.026C7.42229 16.0689 7.53135 16.0912 7.64161 16.0917C7.75187 16.0912 7.86094 16.0689 7.9625 16.026C8.06406 15.983 8.1561 15.9204 8.23328 15.8417L12.9499 11.1333C13.0345 11.0553 13.102 10.9606 13.1482 10.8552C13.1944 10.7497 13.2182 10.6359 13.2182 10.5208C13.2182 10.4057 13.1944 10.2919 13.1482 10.1865C13.102 10.0811 13.0345 9.98636 12.9499 9.90832Z"
+              fill="#222222" />
+          </svg>
+        </div>
+      </div>
+      <div class="shops-nearby__slider swiper">
+        <div class="shops-nearby__wrapper swiper-wrapper">
+          <div class="shops-nearby__slide swiper-slide">
+            <a href="#" class="shops-nearby-card card">
+              <div class="shops-nearby-card__title">Светлогорск</div>
+              <div class="shops-nearby-card__text text-grey-13">Смотреть магазины</div>
+            </a>
+          </div>
+          <div class="shops-nearby__slide swiper-slide">
+            <a href="#" class="shops-nearby-card card">
+              <div class="shops-nearby-card__title">Зеленоград</div>
+              <div class="shops-nearby-card__text text-grey-13">Смотреть магазины</div>
+            </a>
+          </div>
+          <div class="shops-nearby__slide swiper-slide">
+            <a href="#" class="shops-nearby-card card">
+              <div class="shops-nearby-card__title">Балтийск</div>
+              <div class="shops-nearby-card__text text-grey-13">Смотреть магазины</div>
+            </a>
+          </div>
+          <div class="shops-nearby__slide swiper-slide">
+            <a href="#" class="shops-nearby-card card">
+              <div class="shops-nearby-card__title">Гусев</div>
+              <div class="shops-nearby-card__text text-grey-13">Смотреть магазины</div>
+            </a>
+          </div>
+          <div class="shops-nearby__slide swiper-slide">
+            <a href="#" class="shops-nearby-card card">
+              <div class="shops-nearby-card__title">Янтарный</div>
+              <div class="shops-nearby-card__text text-grey-13">Смотреть магазины</div>
+            </a>
+          </div>
+          <div class="shops-nearby__slide swiper-slide">
+            <a href="#" class="shops-nearby-card card">
+              <div class="shops-nearby-card__title">Красноярск</div>
+              <div class="shops-nearby-card__text text-grey-13">Смотреть магазины</div>
+            </a>
+          </div>
+          <div class="shops-nearby__slide swiper-slide">
+            <a href="#" class="shops-nearby-card card">
+              <div class="shops-nearby-card__title">Новосибирск</div>
+              <div class="shops-nearby-card__text text-grey-13">Смотреть магазины</div>
+            </a>
+          </div>
+
+        </div>
+        <div class="shops-nearby__swiper-pagination swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer mt-section">
+  <div class="footer__container container flex">
+    <div class="footer__column">
+      <a href="#" class="footer__logo logo">
+        <span>Second Hand</span><span>.shop</span>
+      </a>
+      <div class="footer__panel flex user-panel">
+        <div class="user-panel__your-city">
+          <span class="user-panel__label text-grey-13">Ваш город</span>
+          <span class="user-panel__your-city-choose text-black">Калининград</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__column buttons">
+        <button class="footer__button button button-small button-small--blue">Добавить магазин</button>
+        <button class="footer__button button button-light button-small ">Разместить объявление</button>
+    </div>
+
+  </div>
+
+</footer>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+  <script>
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+      separateDialCode: true,
+      initialCountry: "auto",
+  geoIpLookup: function(callback) {
+    fetch("https://ipapi.co/json")
+      .then(function(res) { return res.json(); })
+      .then(function(data) { callback(data.country_code); })
+      .catch(function() { callback("us"); });
+  }
+    });
+  </script>
+</body>
+
+</html>
