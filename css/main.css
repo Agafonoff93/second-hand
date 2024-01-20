@@ -779,6 +779,7 @@ h3 {
   flex: 0 1 50%;
   padding-bottom: 50%;
   border-radius: 30px;
+  overflow:hidden;
 }
 @media (max-width: 1024px) {
   .hero__image {
